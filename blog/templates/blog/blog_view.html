@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}View{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<div class="container f">
+
+<header class="page-header">
+
+  <table class="page-header-content">
+    
+    <tr>
+      <th><h5 class="header-button"><a href="{% url 'logout' %}">Log Out</a></h5>  
+      </th>
+      
+    </tr>
+  </table>
+</header>
+
+  <main>
+    <h1>Posts FTW</h1>
+    Sup! {{ user.username }}
+    <p>Make a new Post</p>
+    <a href="create_blog" class="btn btn-primary">Create Post</a>
+    <section>
+      <h2> Search:</h2> 
+       <form method="post" action="{% url 'blog:blog_view' %}">
+            {% csrf_token %}
+
+            <label for="title_contains">Title Contains:</label>
+            <input type="text" id="title_contains" name="title_contains">
+            <button type="submit", value="title_contains">Enviar</button>
+        </form>
+    </section>
+    
+    <section class="featured-products">
+
+        <h2> Recent Posts:</h2>
+
+         <ul>
+
+            {% for posts in post %}
+
+                <div class="card">
+
+                  <div class="card-content p-2">
+
+                    <h2>{{ posts.title }}</h2>
+                    {% for tags in tag %}
+                      <h5> {{ tags.text }}</h5>
+                    {% endfor %}
+
+                    <button class="button primary"><a href="{{ posts.id }}">Ler</a></button>
+                  </div>
+
+              </div>
+            {% endfor %}
+          </ul>
+    </section>    
+  </main>
+
+  <footer>
+    <p>&copy; 2023 BlogFTW. Todos os direitos reservados.</p>
+  </footer>
+  </div>
+{% else %}
+  <p>Login necessário para ver blogs</p>
+  <a href="{% url 'login' %}" class="btn btn-primary">Log In</a>
+{% endif %}
+{% endblock %}

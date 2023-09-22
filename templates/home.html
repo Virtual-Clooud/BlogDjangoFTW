@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  
+  <div class="container f"
+  style= 
+  "">
+    <div class="container"
+    style=
+    "background-color: #f0c884;
+    border-radius: 15px;">
+      <h5><p><a href="{% url 'logout' %}">Log Out</a></p></h5>
+      <h5><p><a href="{% url 'better_auth:user_page' %}">{{ user.username }}</a></p></h5>
+    </div>
+    <header>
+      <h1 class="text-center" style="border-bottom: 1px solid #97a4b5;">Posts FTW
+      </h1>
+
+    </header>
+
+    <main class="text-center">
+      <p>Sup {{ user.username }}!</p>
+      <p>This is the place where i and other mentally questionable people share the lessons learned from the wild world.</p>
+      <a href="blog" class="btn btn-primary">Blog?</a>
+    </main>
+
+    <div data-role="cube"></div>
+
+    <footer>
+      <p>&copy; 2023 BlogFTW. Todos os direitos reservados.</p></footer>
+  </div>
+{% else %}
+  <div class="container" style="background-color: #c1cee0;" >
+    <header>
+      <h1 class="text-center">Postos FTW</h1>
+    </header>
+    <p>You are not logged in</p>
+    <a href="{% url 'better_auth:login' %}" class="btn btn-primary">Log In</a>
+    <a href="{% url 'better_auth:register' %}" class="btn btn-primary">Register</a> 
+    <div data-role="cube"></div>
+    <footer>
+      <p>&copy; 2023 BlogFTW. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+{% endif %}
+{% endblock %}

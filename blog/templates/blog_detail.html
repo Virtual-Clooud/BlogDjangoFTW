@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+ 
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+
+  {% load static %}  
+  <main>  <p><a href="{% url 'logout' %}">Log Out</a></p>
+  {{post.title}}
+  {% for tags in tag %}
+    <h5> {{ tags.text }}</h5>
+  {% endfor %}
+  {{post.text|safe}}
+  {{post.likes}}
+  <br>
+  <form method="post" action="{% url 'blog:post_detail' post.id %}">
+    {% csrf_token %}
+    <label for="like">Didyalike it?</label>
+    <input type="radio"  id="like" name="like">
+    <input type="hidden" name="post_id" value="{{ post.id }}">
+    <button type="submit", value="like">Enviar</button>
+  </form>
+</main>
+
+  <footer>
+    <p>&copy; 2023 BlogFTW. Todos os direitos reservados.</p>
+  </footer>
+{% else %}
+  <p>Login necessário para ver blogs</p>
+  <a href="{% url 'login' %}" class="btn btn-primary">Log In</a>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<h2>Register</h2>
+<form method="post" action="{% url 'better_auth:register' %}">
+      {% csrf_token %}
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required maxlength="100">
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+      <br><br>
+
+      <label for="password">Password:</label>
+      <input type="text" id="password" name="password">
+      <br><br>
+
+
+      <label for="altura">Altura:</label>
+      <input type="number" step="0.1"  id="altura" name="altura">
+      <br><br>
+
+      <button type="submit", value="titulo">Enviar</button>
+  </form>
+
+{% endblock %}

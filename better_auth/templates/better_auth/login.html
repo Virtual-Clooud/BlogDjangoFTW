@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}View{% endblock %}
+
+{% block content %}
+<div class="container f">
+
+<header class="page-header">
+</header>
+
+  <main>
+    <form method="post" action="{% url 'better_auth:login' %}">
+    {% csrf_token %}
+    <label for="username">Username</label>
+    <input type="text"  id="username" name="username">
+    <label for="password">Password</label>
+    <input type="text" name="password" value="password">
+    <button type="submit", value="like">Log In</button>
+    </form>
+    </main>
+
+  <footer>
+    <p>&copy; 2023 BlogFTW. Todos os direitos reservados.</p>
+  </footer>
+  </div>
+{% endblock %}

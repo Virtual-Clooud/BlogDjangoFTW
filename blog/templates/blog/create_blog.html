@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<div class= "continer f">
+
+  <header>
+    <p><a href="{% url 'logout' %}">Log Out</a></p>
+  </header>
+  <main>
+    <h1>Posts FTW</h1>
+    Sup {{ user.username }}!
+    <form method="post" action="{% url 'blog:create_blog' %}">
+      {% csrf_token %}
+
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" required maxlength="100">
+      <br>
+
+      <label for="tags">Tags:</label>
+      <input type="text" id="tags" name="tags" required maxlength="100">
+
+
+      <br>
+
+      <label for="text">Texto (máximo 500 caracteres):</label>
+      <textarea id="texto" name="texto" rows="4" cols="50" maxlength="10000" required></textarea>
+      <br>
+
+      <button type="submit", value="titulo">Enviar</button>
+  </form>
+  </main>
+    <footer>
+    <p>&copy; 2023 BlogFTW. Todos os direitos reservados.</p>
+  </footer>
+</div>
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}" class="btn btn-primary">Log In</a>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<h1>User Page</h1>
+OOOO MA GAO
+{{ user.username }}
+            {% for posts in post %}
+
+                <div class="card">
+
+                  <div class="card-content p-2">
+
+                    <h2>{{ posts.title }}</h2>
+
+                    <button class="button primary"><a href="{{ posts.id }}">Ler</a></button>
+                  </div>
+
+              </div>
+            {% endfor %}
+{% endblock %}

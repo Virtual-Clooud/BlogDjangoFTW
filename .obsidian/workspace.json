@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "3e83b73b809c2fcb",
+    "type": "split",
+    "children": [
+      {
+        "id": "156128ab92e19de9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4adea313c7ca5819",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Todo.md"
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "b9d00816a8d4c3b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "To-Do.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6e4cc466684aa44c",
+    "type": "split",
+    "children": [
+      {
+        "id": "81c60c28d92a55a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "247cf6ae8849034a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "45370beb6e72581b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#Posts",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0bcfe28c79442a76",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "193c02f7390993c9",
+    "type": "split",
+    "children": [
+      {
+        "id": "2c75f904a5257f93",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6f03da54cd134a1c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "To-Do.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dc98569347f6e492",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "To-Do.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3b87be54e7808a9b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e6a4f1ef83fa8598",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "To-Do.md"
+              }
+            }
+          },
+          {
+            "id": "8e9ccc93a1c149fa",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir Quick Switcher": false,
+      "graph:Abrir Visualização de diagrama de grafo": false,
+      "daily-notes:Abrir nota de hoje": false,
+      "templates:Inserir templates": false,
+      "command-palette:Abrir paleta de comando": false,
+      "canvas:Create new canvas": false
+    }
+  },
+  "active": "b9d00816a8d4c3b8",
+  "lastOpenFiles": [
+    "README.md",
+    "db.sqlite3-journal",
+    "better_auth/templates/better_auth/login.html",
+    "better_auth/templates/better_auth/user_page.html",
+    "Todo.md",
+    "To-Do.md",
+    "blog/migrations/__pycache__/0006_post_likes.cpython-38.pyc",
+    "blog/migrations/0006_post_likes.py",
+    "blog/migrations/__pycache__/0005_post_tag.cpython-38.pyc",
+    "blog/migrations/0005_post_tag.py",
+    "blog/migrations/__pycache__/0004_posttagconnect.cpython-38.pyc",
+    "blog/migrations/0004_posttagconnect.py",
+    "blog/migrations/__pycache__/0003_tag.cpython-38.pyc",
+    "ftw.canvas",
+    "Sem título.md",
+    "static/admin/js/vendor/select2/LICENSE.md",
+    "static/admin/css/vendor/select2/LICENSE-SELECT2.md",
+    "static/admin/img/gis/move_vertex_on.svg",
+    "static/admin/img/gis/move_vertex_off.svg",
+    "static/admin/img/tooltag-arrowright.svg",
+    "static/admin/img/tooltag-add.svg",
+    "static/admin/img/sorting-icons.svg",
+    "static/admin/img/selector-icons.svg",
+    "static/admin/img/search.svg",
+    "static/admin/img/inline-delete.svg",
+    "static/admin/img/icon-yes.svg",
+    "static/admin/img/icon-viewlink.svg",
+    "blogftw/static/admin/js/vendor/select2/LICENSE.md",
+    "blogftw/static/admin/css/vendor/select2/LICENSE-SELECT2.md"
+  ]
+}
