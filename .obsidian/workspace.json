@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4adea313c7ca5819",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Todo.md"
-              },
-              "pinned": true
-            }
-          },
-          {
             "id": "b9d00816a8d4c3b8",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -161,30 +148,31 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir Quick Switcher": false,
-      "graph:Abrir Visualização de diagrama de grafo": false,
-      "daily-notes:Abrir nota de hoje": false,
-      "templates:Inserir templates": false,
-      "command-palette:Abrir paleta de comando": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "canvas:Create new canvas": false
     }
   },
   "active": "b9d00816a8d4c3b8",
   "lastOpenFiles": [
-    "README.md",
-    "db.sqlite3-journal",
-    "better_auth/templates/better_auth/login.html",
-    "better_auth/templates/better_auth/user_page.html",
-    "Todo.md",
-    "To-Do.md",
-    "blog/migrations/__pycache__/0006_post_likes.cpython-38.pyc",
-    "blog/migrations/0006_post_likes.py",
-    "blog/migrations/__pycache__/0005_post_tag.cpython-38.pyc",
-    "blog/migrations/0005_post_tag.py",
-    "blog/migrations/__pycache__/0004_posttagconnect.cpython-38.pyc",
-    "blog/migrations/0004_posttagconnect.py",
-    "blog/migrations/__pycache__/0003_tag.cpython-38.pyc",
+    "blogftw/__pycache__/settings.cpython-310.pyc.140028415163568",
+    "blogftw/settings.py~",
+    "CS/CS.txt~",
+    "CS/CS.txt",
+    "CS",
+    "venv/lib/python3.10/site-packages",
+    "venv/bin/python3.10",
+    "venv/bin/python3",
+    "venv/bin/python",
+    "venv/lib/python3.10",
+    "venv/pyvenv.cfg",
     "ftw.canvas",
+    "To-Do.md",
+    "Todo.md",
+    "README.md",
     "Sem título.md",
     "static/admin/js/vendor/select2/LICENSE.md",
     "static/admin/css/vendor/select2/LICENSE-SELECT2.md",

@@ -16,5 +16,18 @@ Quinta:
 - [ ] Tags aparecerem na visão detalhada do blog
 Sexta:
 - [ ] Preparar para entrega
+- [ ] Deployment CheckList:
+	- [ ] Desativar Debug
+	- [ ] SESSION_COOKIE_SECURE
+		- [ ] True
+	- [ ] CSRF_COOKIE_SECURE
+		- [ ] True
+	- [ ] Chave Secreta:
+		- [ ] https://djecrety.ir/
+		- [ ] with open("./CS/CS.txt") as f:  
+			    SECRET_KEY = f.read().strip()
+	
+	- [ ] Setup ALLOWED_HOSTS:
+		- [ ] ALLOWED_HOSTS = ['www.domain.com','domain.com','localhost','127.0.0.1']
 - [ ] Consertar login
 	- [ ] Permitir registro de outros usuários e entrar como outros usuários
